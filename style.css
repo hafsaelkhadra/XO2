@@ -1,0 +1,45 @@
+body.accueil {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #1a1a40, #000033);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.logo {
+  font-size: 3em;
+  color: #00f0ff;
+  text-shadow: 0 0 20px #00f0ff, 0 0 30px #6600ff;
+  margin-bottom: 40px;
+}
+
+.play-button {
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00f0ff;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ff3399, #4444ff);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

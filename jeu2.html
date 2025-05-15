@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu XO Amélioré</title>
+    <link rel="stylesheet" href="jeu2.css">
+
+</head>
+<body>
+
+    <h1>🎮 Jeu XO 🎮</h1>
+    
+<h3 id="players">Joueur X vs Joueur O</h3>
+<div class="scoreboard">
+  <span id="scoreX">0</span> - <span id="scoreO">0</span>
+</div>
+
+
+    <div class="controls">
+        <button id="playMusicBtn">🎵 Jouer la musique</button>
+        <button id="restartBtn">🔄 Rejouer</button>
+    </div>
+
+    <div class="board" id="board"></div>
+
+    <h2 id="status"></h2>
+
+    <!-- Musique de fond -->
+    <audio id="background-music" loop>
+        <source src="musique.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'audio HTML5.
+    </audio>
+
+    <!-- Son de crash (victoire) -->
+    <audio id="crash-sound">
+        <source src="crash.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Son clic sur case -->
+    <audio id="click-sound">
+        <source src="click.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Son de défaite -->
+    <audio id="defeat-sound">
+        <source src="defeat.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script2.js"></script>
+</body>
+</html>

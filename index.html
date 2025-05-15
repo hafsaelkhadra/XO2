@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accueil - Jeu XO</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #1a1a40, #000033);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      flex-direction: column; /* empiler verticalement */
+    }
+
+    .logo-3d {
+      font-size: 80px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #00f0ff;
+      text-shadow:
+        0 0 10px #00f0ff,
+        0 0 20px #00f0ff,
+        0 0 30px #6600ff,
+        0 0 40px #6600ff,
+        0 0 50px #6600ff,
+        0 0 60px #6600ff;
+      margin: 0 0 15px 0;
+      user-select: none;
+    }
+
+    .xo-logo {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 8px #00f0ff);
+      /* tu peux mettre une image ou un svg ici */
+      background: linear-gradient(135deg, #00f0ff, #6600ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100px;
+      font-weight: 900;
+      border-radius: 30px;
+      box-shadow:
+        0 0 15px #00f0ff,
+        0 0 30px #6600ff,
+        inset 0 0 10px #00f0ff;
+      color: #fff;
+      user-select: none;
+    }
+
+    .play-button {
+      background: linear-gradient(45deg, #ff00cc, #3333ff);
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.3em;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 20px #00f0ff;
+      transition: transform 0.2s, background 0.3s;
+      user-select: none;
+    }
+
+    .play-button:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #ff3399, #4444ff);
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-3d">GAME</div>
+  <div class="xo-logo">XO</div>
+  <button class="play-button" onclick="location.href='choix.html'">Jouer</button>
+</body>
+</html>
